@@ -40,7 +40,7 @@ public class ControladorProductos extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 	
-		//leer la instruccion del formulario
+	
 		
 		String instruccion = request.getParameter("instruccion");
 		
