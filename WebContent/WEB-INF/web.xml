@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:web="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd" version="5.0">
+  <servlet>
+    <description></description>
+    <display-name>ServletPrueba</display-name>
+    <servlet-name>ServletPrueba</servlet-name>
+    <servlet-class>com.jdbc.ServletPrueba</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ServletPrueba</servlet-name>
+    <url-pattern>/ServletPrueba</url-pattern>
+  </servlet-mapping>
+  <display-name>WebMVC</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+    <description></description>
+    <display-name>ControladorProductos</display-name>
+    <servlet-name>ControladorProductos</servlet-name>
+    <servlet-class>com.jdbc.ControladorProductos</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ControladorProductos</servlet-name>
+    <url-pattern>/ControladorProductos</url-pattern>
+  </servlet-mapping>
+  <resource-env-ref>
+    <resource-env-ref-name>jdbc/db</resource-env-ref-name>
+    <resource-env-ref-type>javax.sql.DataSource</resource-env-ref-type>
+  </resource-env-ref>
+</web-app>
